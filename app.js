@@ -241,11 +241,11 @@ app.post('/upload', function(req, res){
   
 });
 
-
+/*
 var server = app.listen(3000, function(){
   console.log('Server listening on port 3000');
 });
-
+*/
 /*
 app.listen(app.get('port'), function(){
 console.log( 'Express started on http://localhost:' +
@@ -255,3 +255,13 @@ app.get('port') + '; press Ctrl-C to terminate.' );
     console.log('Our app is running on http://localhost:' + port);
 });*/
 //https://github.com/samiranrahaman/filemanage.git
+
+app.set('port', (process.env.PORT || 5000));
+
+//For avoidong Heroku $PORT error
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
+});
