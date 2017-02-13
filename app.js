@@ -178,7 +178,7 @@ app.post('/upload', function(req, res){
 	//imagepath='./public/uploads/' + req.files.uploads[0].name;
 	
 	//imagepath='/public/uploads/' + req.file;
-	//console.log(path.join(form.uploadDir, '1'+file.name));
+	console.log(path.join(form.uploadDir, ran+file.name));
 	//console.log(file.path);
 	var ran=Math.random();
 	fs.rename(file.path, path.join(form.uploadDir, ran+file.name));
