@@ -4,7 +4,8 @@
   "description": "An AJAX file uploader using JS and NodeJS",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "scripts": { "start" : "node app.js" }
   },
   "author": "SAMIRAN",
   "license": "MIT",
@@ -13,4 +14,5 @@
     "formidable": "^1.0.17",
 	"mongoose":"^4.8.2"
   }
+	
 }
