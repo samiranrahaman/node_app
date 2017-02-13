@@ -242,9 +242,13 @@ app.post('/upload', function(req, res){
 });
 
 
-var server = app.listen(3000, function(){
+/*var server = app.listen(3000, function(){
   console.log('Server listening on port 3000');
 });
-
+*/
+app.listen(app.get('port'), function(){
+console.log( 'Express started on http://localhost:' +
+app.get('port') + '; press Ctrl-C to terminate.' );
+});
 
 //https://github.com/samiranrahaman/filemanage.git
