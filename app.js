@@ -170,7 +170,7 @@ app.post('/upload', function(req, res){
 
   // store all uploads in the /uploads directory
  // form.uploadDir = path.join(__dirname, '/public/folder1');
-	form.uploadDir = 'http://localhost:3000/sss';
+	form.uploadDir = 'http://btranz.website/appma/';
 
   // every time a file has been uploaded successfully,
   // rename it to it's orignal name
