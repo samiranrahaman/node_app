@@ -4,7 +4,7 @@
   "description": "An AJAX file uploader using JS and NodeJS",
   "main": "app.js",
   "scripts": {
-  "start": "node app.js"
+  "start": "app.js"
   },
   "author": "SAMIRAN",
   "license": "MIT",
